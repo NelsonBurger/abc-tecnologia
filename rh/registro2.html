@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ABC Tecnologia</title>
+</head>
+<body>
+    <h1>Registro de Candidatos</h1>
+
+    <!-- form : agrupamento dos campos 
+    do formulário -->
+    <form action="" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome e sobrenome" maxlength="30">
+        </p>
+        
+        <p>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="data" id="data">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="vaga">Escolha a vaga:</label>
+            <select name="vaga" id="vaga">
+                <option value=""></option>
+                <option value="">Analista de TI</option>
+                <option value="">Dev. Front-End</option>
+                <option value="">Dev. Back-End</option>
+            </select>
+        </p>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

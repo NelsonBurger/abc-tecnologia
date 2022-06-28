@@ -1,0 +1,43 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+
+    /* Resolvendo o efeito colateral do float */
+    overflow: hidden;
+}
+
+/* Deixando os itens da lista
+"flutuados" à esquerda (na prática,
+ficam lado a lado) */
+.menu li { float: left; }
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: blue;
+}
+
+/* Escondendo o item que tem o ícone */
+.menu li.icone { display: none; }
+
+@media screen and (max-width: 760px){
+    /* Escondemos os itens do menu */
+    .menu li { display: none; }
+
+    /* Exibimos novamente o item/ícone Menu */
+    .menu li.icone {
+        display: block;
+        float: right;
+    }
+}
+
+
+
